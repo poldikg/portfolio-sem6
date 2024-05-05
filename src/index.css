@@ -1,0 +1,35 @@
+:root {
+  font-family: "Raleway", sans-serif;
+
+  /* Colors */ 
+  --background-color: #1B1B1B;
+  --white: #F1F1F1;
+  --dark-grey: #535353;
+  --grey: #6b6b6c;
+
+  /* Borders */
+  --border-radius: 8px;
+  --border-radius-button: 4px;
+
+  /* Font-related */
+  --heading-font: "Raleway", sans-serif;
+  --body-font: "Jost", sans-serif;
+
+
+  background-color: var(--background-color);
+  
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::-webkit-scrollbar{
+  display: none;
+}
+
+a{
+  text-decoration: none;
+}

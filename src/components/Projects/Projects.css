@@ -1,0 +1,78 @@
+
+
+html {
+  --easing: cubic-bezier(0.5, 0.5, 0.2, 1);
+}
+
+.project-section {
+  padding: 2em 3em;
+  width: 100%;
+}
+
+.projects {
+  margin-top: 2em;
+  padding: 0 3em;
+}
+
+.project {
+  padding: 2em 3em 2em 3em;
+  border-bottom: 2px solid var(--grey); /* Adjust as needed */
+}
+
+
+.image-hover {
+  display: block;
+  color: white;
+  padding: 2em 2em 1em 2em;
+  transform-origin: top left;
+  animation: skwoop 0.7s var(--easing) backwards;
+  animation-duration: calc(0.6s + (var(--i) * 0.2s));
+  animation-delay: calc((var(--i) * 50ms));
+  cursor: pointer;
+
+  @keyframes skwoop {
+    from {
+      opacity: 0;
+      transform: translateY(5vh) skewY(5deg);
+    }
+  }
+
+  .title {
+    font-weight: 300;
+    font-size: 3.5rem;
+    letter-spacing: 0.05ch;
+  }
+
+  img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 50%;
+    max-height: 25vh;
+    pointer-events: none;
+    z-index: 2;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s linear, visibility 0s linear 0.2s;
+  }
+
+  &:hover,
+  &:focus {
+    z-index: 10;
+    .title::after {
+      display: block;
+    }
+
+    img {
+      transition-delay: 0s;
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
+
+.project-nr{
+    margin-left: -1.2em;
+    font-size: 1.5rem;
+}

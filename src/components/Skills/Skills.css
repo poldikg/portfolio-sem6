@@ -1,0 +1,68 @@
+.skills-section{
+    width: 100%;
+    padding: 2em 5em 2em 2.7em;
+    height: 50vh;
+}
+
+h2{
+    font-size: 1.8rem;
+}
+p{
+    font-family: "Jost";
+    font-weight: 300;
+}
+
+.information-section{
+    padding: 2em 1.5em 2em 4em;
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-section{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.right-section{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    width: 15%;
+}
+
+.right-section > p{
+   height: 30px;
+}
+
+button {
+    border: none;
+    background-color: var(--background-color);
+    border-radius: 8px;
+    border: 1px solid white;
+    padding: 5px 10px 5px 10px;
+    transition: ease-out 0.3s;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 400;
+    font-family: "Jost";
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: var(--white);
+    color: var(--background-color);
+}
+
+button:focus{
+    background-color: var(--white);
+    color: var(--background-color);
+    outline: 0;
+}
+
+.btn-section{
+    display: flex;
+    gap: 1em;
+}
+
