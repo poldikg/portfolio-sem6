@@ -8,8 +8,8 @@ const Introduction = (props) => {
         <div className="intro-section">
             
             <div className="intro-text"> 
-                <h1>{props.name}</h1>
-                <p>{props.occupation}</p>
+                <h1 className="intro-header">{props.name}</h1>
+                <p className="intro-description">{props.occupation}</p>
             </div>
         </div>
     )

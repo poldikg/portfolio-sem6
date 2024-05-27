@@ -17,7 +17,13 @@
 
 
   background-color: var(--background-color);
-  
+  scroll-behavior: smooth;
+
+    --swiper-navigation-size: 35px;
+    --swiper-navigation-top-offset: 50%;
+    --swiper-navigation-sides-offset: 10px;
+    --swiper-navigation-color: var(--background-color);
+    --swiper-pagination-color: var(--background-color);
 }
 
 *{
@@ -32,4 +38,10 @@
 
 a{
   text-decoration: none;
+}
+
+h1{
+  font-family: "Raleway";
+  font-weight: 400;
+
 }

@@ -8,7 +8,8 @@
     text-align: center;
 }
 
-h1{
+.intro-header{
     font-family: "Raleway";
     font-weight: 500;
+    font-size: 2rem;
 }

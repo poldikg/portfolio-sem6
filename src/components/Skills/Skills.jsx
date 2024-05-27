@@ -19,7 +19,7 @@ const Skills = () => {
             console.log("Code happened")
         }
         else if(btnName == "DESIGN"){
-            setBtnText("Designing is something I love to do, but I'd say I am more inclined toward minimalism. ")
+            setBtnText("Designing is something I love to do, and I'd say I am more inclined toward minimalism. ")
             console.log("Design happened")
         }
         else if(btnName == "UX/UI"){
@@ -34,7 +34,7 @@ const Skills = () => {
             <h1>SKILLS</h1>
             <div className="information-section">
                 <div className="left-section"> 
-                    <h2>ABOUT ME </h2>
+                    <h2 className="skills-header">ABOUT ME </h2>
                     <p>I am Ivan 22 years old student from Bulgaria. <br/> Currently I am studying ICT & Media Design at Fontys University in Eindhoven.</p>
                 </div>
                 <div className="right-section">
