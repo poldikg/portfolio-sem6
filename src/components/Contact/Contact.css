@@ -61,3 +61,48 @@ textarea{
     font-family: "Raleway";
     font-weight: 600;
 }
+
+@media only screen and (max-width: 815px){
+    .inner-contact-section{
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
+        align-items: center;
+    }
+
+    .inner-contact-section > h3{
+        margin-left: -4em;
+    }
+
+   form{
+    width: inherit;
+   }
+
+
+    .contact-section{
+        margin-top: 13em;
+    }
+
+}
+
+@media only screen and (max-width: 450px){
+    .inner-contact-section{
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
+        align-items: center;
+    }
+
+    .inner-contact-section > h3{
+        margin-left: -1em;
+        font-size: 2.3rem;
+    
+    }
+
+    
+
+    .contact-section{
+        margin-top: 12em;
+    }
+
+}

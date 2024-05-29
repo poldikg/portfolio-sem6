@@ -4,6 +4,6 @@
     border-top: 1px solid var(--white);
     display: flex;
     align-items: center;
-    padding-left: 3em;
+    padding: 3em;
     margin-top: 5em;
 }

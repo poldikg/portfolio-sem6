@@ -24,6 +24,11 @@
     --swiper-navigation-sides-offset: 10px;
     --swiper-navigation-color: var(--background-color);
     --swiper-pagination-color: var(--background-color);
+
+    @media only screen and (max-width: 450px) {
+      --swiper-navigation-size: 15px;
+        --swiper-pagination-bullet-size: 5px;
+    }
 }
 
 *{

@@ -11,7 +11,7 @@ const Navbar = (props) => {
     return (
         <header>
             <nav className="nav-bar">
-               <Link to="/" state="/"> <h2> IG </h2></Link>
+               <Link to="/" state="/"> <h2 className="logo"> IG </h2></Link>
                 <div className="nav-right-side">
                     {currentLocation === "/" ? 
                         <ul>

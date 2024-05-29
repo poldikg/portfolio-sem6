@@ -13,3 +13,15 @@
     font-weight: 500;
     font-size: 2rem;
 }
+
+@media only screen and (max-width: 1550px){
+    .intro-section{
+        width: 100%;
+        height: 600px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}

@@ -79,3 +79,23 @@ html {
     margin-left: -1.2em;
     font-size: 1.5rem;
 }
+
+@media only screen and (min-width: 992px){
+  .projects-section {
+    padding: 2em 3em;
+    width: 100%;
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .project > .title{
+    font-size:2rem;
+  }
+
+  .projects-section{
+    margin-bottom: 5em  ;
+  }
+
+}
