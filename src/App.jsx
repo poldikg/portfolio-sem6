@@ -8,6 +8,7 @@ import Skills from './components/Skills/Skills'
 import Contact from './components/Contact/Contact'
 import Project from './components/Project/Project'
 import Footer from './components/Footer/Footer'
+import Preloader from './components/Preloader/Preloader'
 import { useLocation, useParams } from 'react-router-dom'
 
 
@@ -52,6 +53,7 @@ function App() {
 
   return (
     <div>
+  <Preloader/>
     {currentPath === "/" && <section>
       <div className='nav-intro' id='nav-intro'>
       <Navbar section1={navbarData.section1} section2={navbarData.section2} section3={navbarData.section3}/>
