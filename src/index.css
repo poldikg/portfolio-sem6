@@ -1,7 +1,7 @@
 :root {
   font-family: "Raleway", sans-serif;
 
-  /* Colors */ 
+  /* Colors */
   --background-color: #1B1B1B;
   --white: #F1F1F1;
   --dark-grey: #535353;
@@ -19,33 +19,33 @@
   background-color: var(--background-color);
   scroll-behavior: smooth;
 
-    --swiper-navigation-size: 35px;
-    --swiper-navigation-top-offset: 50%;
-    --swiper-navigation-sides-offset: 10px;
-    --swiper-navigation-color: var(--background-color);
-    --swiper-pagination-color: var(--background-color);
+  --swiper-navigation-size: 35px;
+  --swiper-navigation-top-offset: 50%;
+  --swiper-navigation-sides-offset: 10px;
+  --swiper-navigation-color: var(--white);
+  --swiper-pagination-color: var(--white);
 
-    @media only screen and (max-width: 450px) {
-      --swiper-navigation-size: 15px;
-        --swiper-pagination-bullet-size: 5px;
-    }
+  @media only screen and (max-width: 450px) {
+    --swiper-navigation-size: 15px;
+    --swiper-pagination-bullet-size: 5px;
+  }
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-*::-webkit-scrollbar{
+*::-webkit-scrollbar {
   display: none;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-h1{
+h1 {
   font-family: "Raleway";
   font-weight: 400;
 
