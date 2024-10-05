@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 
 const Project = () => {
- 
+
     const propsLocation = useLocation().state;
     const projectData = propsLocation.projectData;
     const projectSliderImages = propsLocation.sliderImages;
@@ -20,29 +20,30 @@ const Project = () => {
     console.log(nextProjectData)
 
     const renderProjectData = projectData.map((project, index) => {
-    return (index + 1) % 2 === 0 ? <div className="information-details"> 
-    <p className="project-text"> {project.description}  </p>
-    <img className="project-picture" src={project.img} alt="" srcSet="" />
-</div> : 
-     <div className="information-details"> 
-    <img className="project-picture" src={project.img} alt="" srcSet="" />
-    <p className="project-text"> {project.description}  </p>
-</div>}
-)
+        return (index + 1) % 2 === 0 ? <div className="information-details">
+            <p className="project-text"> {project.description}  </p>
+            <img className="project-picture" src={project.img} alt="" srcSet="" />
+        </div> :
+            <div className="information-details">
+                <img className="project-picture" src={project.img} alt="" srcSet="" />
+                <p className="project-text"> {project.description}  </p>
+            </div>
+    }
+    )
 
 
-useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [propsLocation]);
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [propsLocation]);
 
-  useEffect(() => {
-    for (let i = 0; i < projectDataImported.length ; i++){
+    useEffect(() => {
+        for (let i = 0; i < projectDataImported.length; i++) {
 
-        if(projectDataImported[i]["title"] === propsLocation.title){
-            setNextProjectData(projectDataImported[i + 1])
+            if (projectDataImported[i]["title"] === propsLocation.title) {
+                setNextProjectData(projectDataImported[i + 1])
+            }
         }
-      }
-  }, [propsLocation])
+    }, [propsLocation])
 
 
 
@@ -50,17 +51,22 @@ useEffect(() => {
     return (
         <div className="project-page">
             <Navbar section1={"Projects"} section2={"Skills"} section3={"Contact Me"} />
-            <ProjectSlider images={projectSliderImages}/>
+            <ProjectSlider images={projectSliderImages} />
             {/* <img src={projectData[0].img} alt="" /> */}
 
-            <div className="project-name-description"> 
-            <h1>{propsLocation.title}</h1>
-            <p className="project-description">{propsLocation.projectDescription}</p>
+            <div className="project-name-description">
+                <div>
+                    <h1>{propsLocation.title}</h1>
+                    <p className="project-description">{propsLocation.projectDescription}</p>
+                </div>
+
+                <a href={`${propsLocation.link}`} target="_blank" rel="noopener noreferrer" className="link project-open"> Open the Project </a>
+
             </div>
-            
+
             <div className="project-infromation-pictures">
                 {renderProjectData}
-                
+
 
                 <div className="next-project">
                     <p>{"( NEXT UP )"}</p>
@@ -70,7 +76,7 @@ useEffect(() => {
             </div>
 
 
-            <Footer/>
+            <Footer />
         </div>
     )
 }

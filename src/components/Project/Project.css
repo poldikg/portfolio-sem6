@@ -1,47 +1,48 @@
-.project-name-description{
+.project-name-description {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
+    justify-content: space-between;
     width: 100%;
     margin-top: 8em;
     margin-bottom: 8em;
     padding: 0em 3em 0em 5em;
 }
 
-h1{
+h1 {
     font-size: 2.5em;
 }
 
-.project-name-description > p{
+.project-description {
     color: var(--grey);
 }
 
-.project-infromation-pictures{
+.project-infromation-pictures {
     display: flex;
     flex-direction: column;
-    align-items:  center;
+    align-items: center;
     gap: 6em;
     padding: 0em 5em 0em 5em;
 }
 
 
-.information-details{
+.information-details {
     display: flex;
     gap: 7em;
     justify-content: center;
 }
 
-.project-picture{
+.project-picture {
     height: 300px;
     width: auto;
     border-radius: 8px;
 }
 
-.project-text{
+.project-text {
     width: 30%;
 }
 
-.next-project{
+.next-project {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -49,47 +50,54 @@ h1{
     gap: 1em;
 }
 
-.next-project > button{
+.next-project>button {
     margin-top: 1em;
 }
 
-.project-description{
+.project-description {
     font-weight: 400;
 }
 
-.next-project-title{
+.next-project-title {
     font-size: 2.1rem;
     font-weight: 400;
 }
 
-.next-project-btn{
+.next-project-btn {
     border-radius: 14px;
     padding: 0.5em 1.8em;
 }
 
 @media only screen and (max-width: 450px) {
-    .project-name-description{
+    .project-name-description {
         margin-bottom: 2em;
     }
 
-    .project-infromation-pictures{
+    .project-infromation-pictures {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .information-details{
+
+    .information-details {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 1em;
     }
 
-    .project-picture{
+    .project-picture {
         width: 300px;
         height: 150px;
     }
 
-    .project-text{
+    .project-text {
         width: 100%;
     }
+}
+
+.project-open {
+    margin-right: 10em;
+    margin-top: 0.7em;
+    font-size: 1.3rem;
 }
