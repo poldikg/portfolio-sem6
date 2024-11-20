@@ -11,7 +11,6 @@ import projectData from "./ProjectData";
 const Projects = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
-  console.log(projectData)
   const handleMouseMove = (e) => {
     setMousePosition({ x: e.clientX, y: e.clientY });
   };

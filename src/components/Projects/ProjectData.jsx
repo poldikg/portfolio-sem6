@@ -23,6 +23,12 @@ import Waterfall from "../../assets/Bierens/Waterfall.png"
 import Agilefall from "../../assets/Bierens/Agilefall.png"
 import Dashboard from "../../assets/Bierens/Dashboard.png"
 
+//Importing Movie images
+import HomePage1 from "../../assets/MovieWebsite/Homepage1.png"
+import HomePage2 from "../../assets/MovieWebsite/Homepage2.png"
+import HomePage3 from "../../assets/MovieWebsite/Homepage3.png"
+import HomePage4 from "../../assets/MovieWebsite/Homepage4.png"
+
 
 const projectData = [
   {
@@ -66,8 +72,9 @@ const projectData = [
   },
   {
     title: "Movies Website(in progress)",
-    image: Project3,
+    image: HomePage1,
     projectDescription: "PROJECT DESCRIPTION",
+    link: "https://github.com/poldikg/movies",
     projectData: [{
       img: Project3,
       description: "Text 1 Text 1 Text 1 Text 1 Text 1 Text 1 Text 1 Text 1 Text 1 Text 1 Text 1 Text 1 Text 1 "
@@ -80,7 +87,7 @@ const projectData = [
       img: Project3,
       description: "Text 3 Text 3 Text 3 Text 3 Text 3 Text 3 Text 3 Text 3 Text 3 Text 3 Text 3 Text 3 Text 3 "
     }],
-    sliderImages: [Project3, Project3, Project3, Project3]
+    sliderImages: [HomePage1, HomePage2, HomePage3, HomePage4]
   },
 ];
 
